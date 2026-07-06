@@ -1,0 +1,307 @@
+You are a senior React UI engineer and UX designer.
+
+Build a premium corporate consulting website called "Safron".
+
+Technology Stack
+- React (Vite)
+- TailwindCSS
+- React Router
+- Framer Motion
+- Lucide React icons
+
+Style Inspiration
+- IBM Consulting
+- Stripe
+- Linear
+- McKinsey Digital
+- Apple
+
+Design Principles
+- Minimal
+- Premium
+- Executive
+- Lots of whitespace
+- Smooth animations
+- Mobile-first
+- Fully responsive
+
+Brand
+
+Company:
+Safron
+
+Tagline:
+Transforming Enterprises through SAP, AI & Sustainable Innovation
+
+Positioning:
+Enterprise Transformation & Advisory
+
+Brand Promise:
+Turning Complexity into Clarity.
+
+------------------------------------------------
+
+COLOR PALETTE
+
+Primary
+#0B1F3A
+
+Secondary
+#2563EB
+
+Accent
+#D4AF37
+
+Background
+#F8FAFC
+
+Text
+#1F2937
+
+------------------------------------------------
+
+TYPOGRAPHY
+
+Headings
+Poppins
+
+Body
+Inter
+
+------------------------------------------------
+
+Create the following homepage.
+
+------------------------------------------------
+
+NAVBAR
+
+Logo on left:
+
+SAFRON
+
+Navigation
+
+Home
+
+Advisory
+
+How We Help
+
+Industries
+
+Training
+
+Perspectives
+
+About
+
+Contact
+
+Primary CTA button
+
+Let's Talk
+
+Sticky navbar.
+
+Glass blur on scroll.
+
+------------------------------------------------
+
+HERO
+
+Large premium hero.
+
+Headline
+
+Transforming Enterprises through SAP, AI & Sustainable Innovation
+
+Supporting Text
+
+Safron partners with organizations to navigate complex business transformation through strategic advisory, enterprise architecture, SAP expertise, AI, governance and sustainability.
+
+Buttons
+
+Start the Conversation
+
+Explore Advisory
+
+Right side
+
+Animated enterprise network illustration using SVG only.
+
+No stock photos.
+
+------------------------------------------------
+
+SECTION
+
+Every Transformation Starts with Questions
+
+Display five questions in elegant cards.
+
+How do we modernize without increasing complexity?
+
+How do we align business and technology?
+
+How do we adopt AI responsibly?
+
+How do we strengthen governance?
+
+How do we achieve sustainable transformation?
+
+Below this:
+
+That's where Safron comes in.
+
+------------------------------------------------
+
+SECTION
+
+Safron Advisory Model
+
+Five connected cards
+
+Discover
+
+Diagnose
+
+Design
+
+Deliver
+
+Sustain
+
+Each has icon
+
+Title
+
+Short description
+
+Hover animation.
+
+------------------------------------------------
+
+SECTION
+
+How We Help
+
+Grid of seven cards
+
+Enterprise Transformation
+
+SAP Advisory
+
+Enterprise Architecture
+
+AI & Innovation
+
+Governance, Risk & Compliance
+
+ESG & Sustainability
+
+Corporate Training
+
+------------------------------------------------
+
+SECTION
+
+Industries
+
+Banking
+
+Financial Services
+
+Insurance
+
+Retail
+
+Modern icon cards.
+
+------------------------------------------------
+
+SECTION
+
+Why Executives Choose Safron
+
+Four pillars
+
+Strategic Advisory
+
+Enterprise Perspective
+
+Sustainable Outcomes
+
+Capability Building
+
+------------------------------------------------
+
+SECTION
+
+Perspectives
+
+Three article cards.
+
+Use placeholders.
+
+------------------------------------------------
+
+FINAL CTA
+
+Ready to Transform with Confidence?
+
+Book Discovery Call
+
+------------------------------------------------
+
+FOOTER
+
+Safron
+
+Enterprise Transformation & Advisory
+
+Turning Complexity into Clarity.
+
+Navigation links
+
+LinkedIn
+
+Email
+
+------------------------------------------------
+
+Animations
+
+Use Framer Motion.
+
+Use fade-up animations.
+
+Hover lift cards.
+
+Smooth transitions.
+
+------------------------------------------------
+
+Deliverables
+
+Organize into reusable React components.
+
+Create folders
+
+/components
+
+/pages
+
+/assets
+
+/layout
+
+Use clean production-ready code.
+
+Follow React best practices.
+
+Use semantic HTML.
+
+Optimize for Lighthouse score above 95.
+
+The code should be deployment-ready.

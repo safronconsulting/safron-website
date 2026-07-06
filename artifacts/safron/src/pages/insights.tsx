@@ -1,28 +1,33 @@
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/seo";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, BookOpen, MoveRight } from "lucide-react";
+import { motion } from "framer-motion";
 
-export default function Insights() {
+export default function Perspectives() {
   return (
-    <div className="min-h-screen flex flex-col bg-gray-50">
+    <div className="min-h-screen flex flex-col bg-background">
       <SEO 
-        title="Insights & Research" 
-        description="Latest thought leadership, research, and insights on enterprise architecture, SAP, and artificial intelligence from Safron."
+        title="Perspectives & Research | Safron" 
+        description="Latest thought leadership, research, and perspectives on enterprise architecture, SAP, and artificial intelligence from Safron."
       />
       <Navbar />
       
       <main className="flex-grow pt-32 pb-24">
         <div className="container mx-auto px-6 max-w-7xl">
-          <div className="max-w-2xl mb-16">
-            <h1 className="text-4xl md:text-5xl font-bold text-secondary mb-6">Insights & Research</h1>
-            <p className="text-lg text-gray-600">
+          <motion.div 
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            className="max-w-2xl mb-16"
+          >
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold font-display text-primary mb-6">Perspectives</h1>
+            <p className="text-xl text-gray-600 font-light">
               Thought leadership and architectural perspectives from our managing partners and principal engineers.
             </p>
-          </div>
+          </motion.div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Placeholder Articles */}
             {[
               {
                 category: "Whitepaper",
@@ -61,29 +66,40 @@ export default function Insights() {
                 date: "July 22, 2023"
               }
             ].map((article, i) => (
-              <article key={i} className="bg-white border border-gray-200 p-8 flex flex-col hover:shadow-xl transition-all duration-300 group cursor-pointer">
+              <motion.article 
+                key={i} 
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: i * 0.1 }}
+                className="bg-white border border-gray-100 p-8 flex flex-col hover:shadow-lg transition-all duration-300 group cursor-pointer"
+              >
                 <div className="flex justify-between items-center mb-6">
-                  <span className="text-xs font-bold tracking-widest text-primary uppercase">{article.category}</span>
+                  <span className="text-xs font-bold tracking-widest text-secondary uppercase">{article.category}</span>
                   <span className="text-xs text-gray-400">{article.date}</span>
                 </div>
-                <h3 className="text-xl font-bold text-secondary mb-4 group-hover:text-primary transition-colors leading-tight">
+                <h3 className="text-xl font-bold font-display text-primary mb-4 group-hover:text-secondary transition-colors leading-tight">
                   {article.title}
                 </h3>
                 <p className="text-gray-600 mb-8 flex-grow text-sm leading-relaxed">
                   {article.desc}
                 </p>
-                <div className="flex items-center text-sm font-medium text-secondary group-hover:text-primary transition-colors">
-                  Read Article <ArrowRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                <div className="flex items-center text-sm font-bold tracking-wide uppercase text-gray-400 group-hover:text-secondary transition-colors">
+                  Read Article <MoveRight className="ml-2 w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
                 </div>
-              </article>
+              </motion.article>
             ))}
           </div>
           
-          <div className="mt-16 text-center">
-            <button className="bg-transparent border border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors px-8 py-4 text-sm font-bold tracking-wide uppercase">
+          <motion.div 
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.8 }}
+            className="mt-16 text-center"
+          >
+            <button className="bg-transparent border border-gray-300 text-primary hover:border-primary hover:bg-primary hover:text-white transition-all px-8 py-4 text-sm font-bold tracking-wide uppercase">
               Load More Insights
             </button>
-          </div>
+          </motion.div>
         </div>
       </main>
       
