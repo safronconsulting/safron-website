@@ -2,6 +2,7 @@ import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { SEO } from "@/components/seo";
 import { Button } from "@/components/ui/button";
+import { ContactForm } from "@/components/ContactForm";
 import { ArrowRight, Search, Activity, PenTool, Zap, Repeat, Layers, Cpu, ShieldCheck, Globe, BookOpen, MoveRight, Database } from "lucide-react";
 import { Link } from "wouter";
 import { motion } from "framer-motion";
@@ -335,12 +336,15 @@ export default function Home() {
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
+              className="mb-12"
             >
-              <h2 className="text-3xl md:text-5xl font-bold font-display text-white mb-8">Ready to Transform with Confidence?</h2>
-              <Button size="lg" asChild className="rounded-none bg-accent text-primary hover:bg-white hover:text-primary h-14 px-10 text-lg font-bold tracking-wide uppercase transition-colors">
-                <a href="mailto:contact@safron.com">Book Discovery Call</a>
-              </Button>
+              <h2 className="text-3xl md:text-5xl font-bold font-display text-white mb-4">Ready to Transform with Confidence?</h2>
+              <p className="text-gray-300 text-lg max-w-xl mx-auto">
+                Tell us about your transformation goals and a Safron advisor will be in touch.
+              </p>
             </motion.div>
+
+            <ContactForm />
           </div>
         </section>
       </main>

@@ -20,7 +20,7 @@ export function Footer() {
               <a href="#" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
                 <Linkedin size={18} />
               </a>
-              <a href="mailto:contact@safron.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
+              <a href="mailto:sujata@saf-ron.com" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-secondary hover:text-white transition-colors">
                 <Mail size={18} />
               </a>
             </div>
