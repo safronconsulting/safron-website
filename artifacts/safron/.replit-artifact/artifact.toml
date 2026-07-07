@@ -15,11 +15,11 @@ paths = [ "/" ]
 localPort = 23395
 
 [services.development]
-run = "pnpm --filter @workspace/safron run dev"
+run = "pnpm run dev"
 
 [services.production]
-build = [ "pnpm", "--filter", "@workspace/safron", "run", "build" ]
-publicDir = "artifacts/safron/dist/public"
+build = [ "pnpm", "run", "build" ]
+publicDir = "dist/public"
 serve = "static"
 
 [[services.production.rewrites]]
