@@ -1,0 +1,1 @@
+- [Safron project structure](safron-structure.md) — Safron app lives at repo root (not artifacts/); pnpm run dev launches Vite from root; tsconfig.solution.json is the workspace lib config.
